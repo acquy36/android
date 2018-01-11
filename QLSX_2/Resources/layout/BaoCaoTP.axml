@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="@android:color/holo_blue_light"
+                android:id="@+id/textview"
+                android:layout_weight="2"
+                android:text="Báo Cáo Nhập Thành Phẩm" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Chọn Thành Phẩm:"
+                android:textSize="16sp" />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_TPBC"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Tổng Số:"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtTongNhapTP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint=" Tổng Số Lượng:"
+                android:textSize="16sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Số Lượng Tồn:"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtSoLuongTP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Số Lượng Tồn:"
+                android:textSize="16sp" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btnLoad_BC"
+                android:textColor="@android:color/black"
+                android:layout_weight="2"
+                android:text="Load" />
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:id="@+id/BCTP_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+</RelativeLayout>

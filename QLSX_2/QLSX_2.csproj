@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DAD5A3E4-FF6B-4EE7-AF24-2FA08143B7B0}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLSX_2</RootNamespace>
+    <AssemblyName>QLSX_2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GioithieuActivity.cs" />
+    <Compile Include="BaoCaoTPActivity.cs" />
+    <Compile Include="AddNVActivity.cs" />
+    <Compile Include="BaoCaoXuatTPActivity.cs" />
+    <Compile Include="ChiPhiKhacActivity.cs" />
+    <Compile Include="KhachHangActivity.cs" />
+    <Compile Include="LoginActivity.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="NguyenLieuDaSCActivity.cs" />
+    <Compile Include="NhanVienActivity.cs" />
+    <Compile Include="PhieuNhapTPChiTietActivity.cs" />
+    <Compile Include="PhieuThuActivity.cs" />
+    <Compile Include="PhieuXuatNLDaSCActivity.cs" />
+    <Compile Include="PhieuXuatNLDaSCCoCPActivity.cs" />
+    <Compile Include="PhieuXuatTPActivity.cs" />
+    <Compile Include="RegisterActivity.cs" />
+    <Compile Include="Resources\Data\BaoCaoTPNhapAdapter.cs" />
+    <Compile Include="Resources\Data\BaoCaoTPXuatAdapter.cs" />
+    <Compile Include="Resources\Data\ChiPhiKhacAdapter.cs" />
+    <Compile Include="Resources\Data\ChiPhiKhacChiTietAdapter.cs" />
+    <Compile Include="Resources\Data\ChiPhiKhacCTDbHelper.cs" />
+    <Compile Include="Resources\Data\ChiPhiKhacDbHelper.cs" />
+    <Compile Include="Resources\Data\Database.cs" />
+    <Compile Include="Resources\Data\DatePickerFragment.cs" />
+    <Compile Include="Resources\Data\KhachHangDbHelper.cs" />
+    <Compile Include="Resources\Data\KHListBaseAdapter.cs" />
+    <Compile Include="Resources\Data\NgayDbHelper.cs" />
+    <Compile Include="Resources\Data\NguyenLieuDaSCAdapter.cs" />
+    <Compile Include="Resources\Data\NguyenLieuDaSCDbHelper.cs" />
+    <Compile Include="Resources\Data\NhanVienAdapter.cs" />
+    <Compile Include="Resources\Data\NhanVienDbHelper.cs" />
+    <Compile Include="Resources\Data\PhieuNhapTPChiTietDbHelper.cs" />
+    <Compile Include="Resources\Data\PhieuNhapTPCTAdapter.cs" />
+    <Compile Include="Resources\Data\PhieuThuAdapter.cs" />
+    <Compile Include="Resources\Data\PhieuThuDbHelper.cs" />
+    <Compile Include="Resources\Data\PhieuXuatNLDaSCAdapter.cs" />
+    <Compile Include="Resources\Data\PhieuXuatNLDaSCChiTietAdapter.cs" />
+    <Compile Include="Resources\Data\PhieuXuatNLDaSCChiTietDbHelper.cs" />
+    <Compile Include="Resources\Data\PhieuXuatNLDaSCCoCPAdapter.cs" />
+    <Compile Include="Resources\Data\PhieuXuatNLDaSCCPDbHelper.cs" />
+    <Compile Include="Resources\Data\PhieuXuatNLDaSCDbHelper.cs" />
+    <Compile Include="Resources\Data\PhieuXuatThanhPhamDbHelper.cs" />
+    <Compile Include="Resources\Data\PhieuXuatTPAdapter.cs" />
+    <Compile Include="Resources\Data\PhieuXuatTPChiTietAdapter.cs" />
+    <Compile Include="Resources\Data\PhieuXuatTPChiTietDbHelper.cs" />
+    <Compile Include="Resources\Data\ThanhPhamDBHelper.cs" />
+    <Compile Include="Resources\Data\TPAdapter.cs" />
+    <Compile Include="Resources\Model\ChiPhiKhac.cs" />
+    <Compile Include="Resources\Model\ChiPhiKhacChiTiet.cs" />
+    <Compile Include="Resources\Model\KhachHang.cs" />
+    <Compile Include="Resources\Model\LoginTable.cs" />
+    <Compile Include="Resources\Model\Ngay.cs" />
+    <Compile Include="Resources\Model\NguyenLieuDaSoche.cs" />
+    <Compile Include="Resources\Model\NhanVien.cs" />
+    <Compile Include="Resources\Model\PhieuNhapTPCT.cs" />
+    <Compile Include="Resources\Model\PhieuThu.cs" />
+    <Compile Include="Resources\Model\PhieuXuatNLDaSCChiTiet.cs" />
+    <Compile Include="Resources\Model\PhieuXuatNLDaSCCoCP.cs" />
+    <Compile Include="Resources\Model\PhieuXuatNLDaSoChe.cs" />
+    <Compile Include="Resources\Model\PhieuXuatTP.cs" />
+    <Compile Include="Resources\Model\PhieuXuatTPChiTiet.cs" />
+    <Compile Include="Resources\Model\ThanhPham.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThanhPhamActivity.cs" />
+    <Compile Include="ThemChiPhiKhacActivity.cs" />
+    <Compile Include="ThemKHActivity.cs" />
+    <Compile Include="ThemNLDaSCActivity.cs" />
+    <Compile Include="ThemPhieuNhapTPCTActivity.cs" />
+    <Compile Include="ThemPhieuThuActivity.cs" />
+    <Compile Include="ThemPhieuXuatTPActivity.cs" />
+    <Compile Include="ThemPXNLDaSCActivity.cs" />
+    <Compile Include="ThemPXNLDaSCCoCPActivity.cs" />
+    <Compile Include="ThemTPActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\KhachHang.axml" />
+    <AndroidResource Include="Resources\layout\BaoCaoTP.axml" />
+    <AndroidResource Include="Resources\layout\NhanVien.axml" />
+    <AndroidResource Include="Resources\layout\PhieuThu.axml" />
+    <AndroidResource Include="Resources\layout\PhieuXuatTP.axml" />
+    <AndroidResource Include="Resources\layout\ThanhPham.axml" />
+    <AndroidResource Include="Resources\layout\ChiPhiKhac.axml" />
+    <AndroidResource Include="Resources\layout\PhieuNhapTPChiTiet.axml" />
+    <AndroidResource Include="Resources\layout\PhieuXuatNLDaSoChe.axml" />
+    <AndroidResource Include="Resources\layout\AddEditKhachHang.axml" />
+    <AndroidResource Include="Resources\layout\Gioithieu.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\list_row_CPK.axml" />
+    <AndroidResource Include="Resources\layout\list_row_NV.axml" />
+    <AndroidResource Include="Resources\layout\list_row_PT.axml" />
+    <AndroidResource Include="Resources\layout\list_row_PXTP.axml" />
+    <AndroidResource Include="Resources\layout\list_row_TP.axml" />
+    <AndroidResource Include="Resources\layout\PhieuXuatNLDaSCCP.axml" />
+    <AndroidResource Include="Resources\layout\ThemChiPhiKhacChiTiet.axml" />
+    <AndroidResource Include="Resources\layout\ThemNhanVien.axml" />
+    <AndroidResource Include="Resources\layout\ThemThanhPham.axml" />
+    <AndroidResource Include="Resources\layout\ThemNguyenLieuDaSC.axml" />
+    <AndroidResource Include="Resources\layout\ThemPhieuThu.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\NguyenLieuDaSoChe.axml" />
+    <AndroidResource Include="Resources\layout\ThemPXNLDaSCCoCP.axml" />
+    <AndroidResource Include="Resources\layout\ThemPhieuXNLDaSoChe.axml" />
+    <AndroidResource Include="Resources\layout\ThemPhieuXuatNLDaSCChiTiet.axml" />
+    <AndroidResource Include="Resources\layout\layoutPhieuXuat.axml" />
+    <AndroidResource Include="Resources\layout\ThemPhieuNhapTPchitiet.axml" />
+    <AndroidResource Include="Resources\layout\ThemChiPhiKhac.axml" />
+    <AndroidResource Include="Resources\layout\list_row_BCTPNhap.axml" />
+    <AndroidResource Include="Resources\layout\list_row_BCTPXuat.axml" />
+    <AndroidResource Include="Resources\layout\list_row_PXNLDaSC.axml" />
+    <AndroidResource Include="Resources\layout\list_row_PNTPCT.axml" />
+    <AndroidResource Include="Resources\layout\list_row_PXNLDaSCCoCP.axml" />
+    <AndroidResource Include="Resources\layout\list_row_PXNLDaSCCT.axml" />
+    <AndroidResource Include="Resources\layout\list_row_PXTPCT.axml" />
+    <AndroidResource Include="Resources\layout\list_row_CPKChiTiet.axml" />
+    <AndroidResource Include="Resources\layout\list_row_NLDaSC.axml" />
+    <AndroidResource Include="Resources\layout\list_row_contact_list.axml" />
+    <AndroidResource Include="Resources\layout\ThemPhieuXuatTP.axml" />
+    <AndroidResource Include="Resources\layout\ThemPhieuXuatTPChiTiet.axml" />
+    <AndroidResource Include="Resources\layout\BaoCaoXuatTP.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\layoutBaoCao.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Newuser.axml" />
+    <AndroidResource Include="Resources\layout\Login.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\border.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\button_shape.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\cell_shape.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\gradient_bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\gradient_bg_alternate.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\gradient_bg_hover.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\gradient_bg_hover_alternate.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\image_bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\input_shape.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\list_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\list_selector_alternate.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\styles.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+		<Target Name="BeforeBuild">
+		</Target>
+		<Target Name="AfterBuild">
+		</Target>
+ -->
+</Project>

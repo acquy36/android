@@ -1,0 +1,2 @@
+android.app.Application
+QLSX_2.QLSX_2

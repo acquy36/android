@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+    <TextView
+        android:text="Báo Cáo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/text1"
+        android:textColor="@android:color/holo_blue_light" />
+    <Button
+        android:text="Báo Cáo Nhập Thành Phẩm"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/button_BCNhapTP"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black" />
+    <Button
+        android:text="Báo Cáo Xuất Thành Phẩm "
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/button_BCXuatTP"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black" />
+</LinearLayout>

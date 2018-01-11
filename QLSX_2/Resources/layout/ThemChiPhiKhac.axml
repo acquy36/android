@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="THÊM CHI PHÍ KHÁC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/textCPK" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Mã Phiếu:"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/MaChiPhiKhac_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Tên Chi Phí:"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/TenCPK_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Đơn Vị Tính:"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/DVTCPK_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="274.5dp"
+            android:id="@+id/lsNgayGia" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="0.0dp">
+        <Button
+            android:text="Thêm Ngày và Giá"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnThemNgayCPK"
+            android:layout_weight="1" />
+        <Button
+            android:text="Lưu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLuuChiPhiKhac"
+            android:layout_weight="1" />
+        <Button
+            android:text="Hủy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHuyChiPhiKhac"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

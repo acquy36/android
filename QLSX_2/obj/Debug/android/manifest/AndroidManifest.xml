@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="QLSX_2.QLSX_2" android:versionCode="1" android:versionName="1.0">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="QLSX_2" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="Activity1" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.GioithieuActivity" />
+    <activity android:label="BaoCaoTPActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.BaoCaoTPActivity" />
+    <activity android:label="AddNVActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.AddNVActivity" />
+    <activity android:label="BaoCaoXuatTPActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.BaoCaoXuatTPActivity" />
+    <activity android:label="ChiPhiKhacActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ChiPhiKhacActivity" />
+    <activity android:label="KhachHangActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.KhachHangActivity" />
+    <activity android:icon="@drawable/icon" android:label="QLSX" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.LoginActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="MainActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.MainActivity" />
+    <activity android:label="NguyenLieuDaSCActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.NguyenLieuDaSCActivity" />
+    <activity android:label="NhanVienActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.NhanVienActivity" />
+    <activity android:label="PhieuNhapTPChiTietActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.PhieuNhapTPChiTietActivity" />
+    <activity android:label="PhieuThuActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.PhieuThuActivity" />
+    <activity android:label="PhieuXuatNLDaSCActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.PhieuXuatNLDaSCActivity" />
+    <activity android:label="PhieuXuatNLDaSCCoCPActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.PhieuXuatNLDaSCCoCPActivity" />
+    <activity android:label="PhieuXuatTPActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.PhieuXuatTPActivity" />
+    <activity android:label="RegisterActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.RegisterActivity" />
+    <activity android:label="ThanhPhamActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ThanhPhamActivity" />
+    <activity android:label="ThemChiPhiKhacActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ThemChiPhiKhacActivity" />
+    <activity android:label="ThemKHActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ThemKHActivity" />
+    <activity android:label="ThemNLDaSCActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ThemNLDaSCActivity" />
+    <activity android:label="ThemPhieuNhapTPCTActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ThemPhieuNhapTPCTActivity" />
+    <activity android:label="ThemPhieuThu" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ThemPhieuThuActivity" />
+    <activity android:label="ThemPhieuXuatTPActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ThemPhieuXuatTPActivity" />
+    <activity android:label="ThemPXNLDaSCActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ThemPXNLDaSCActivity" />
+    <activity android:label="ThemPXNLDaSCCoCPActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ThemPXNLDaSCCoCPActivity" />
+    <activity android:label="ThemTPActivity" android:name="md5a4eebf6d1ab395fe58b5b54fdd5d0776.ThemTPActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="QLSX_2.QLSX_2.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.QLSX_2.QLSX_2" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

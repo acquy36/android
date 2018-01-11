@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:text="Phiếu Xuất Nguyên Liệu Đã Sơ Chế"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:id="@+id/textd" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Mã Phiếu:"
+                android:textSize="16sp" />
+            <EditText
+                android:lines="1"
+                android:maxLines="1"
+                android:id="@+id/MaPhieuXuatNLDaSC_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Nhân Viên:"
+                android:textSize="16sp" />
+          <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:id="@+id/tvMaNV_PXNL"
+                android:textSize="16sp" />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/PXNLDaSC_spNV"
+                android:layout_weight="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Ngày :"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/date_PXNLDaSC"
+                android:text="Ngày Xuất"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+            <Button
+                android:id="@+id/btnChon_PXNLDaSC"
+                android:text="Chọn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:id="@+id/lsPhieuXuatNLDaSCChitiet" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <Button
+                android:text="Nguyên Liệu Chi Tiết"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnThemDSNguyenLieuDaSC"
+                android:layout_weight="1" />
+            <Button
+                android:text="Lưu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnLuuPhieuxuatNLDaSC"
+                android:layout_weight="1" />
+            <Button
+                android:text="Hủy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnHuyPhieuxuatNLDaSC"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
